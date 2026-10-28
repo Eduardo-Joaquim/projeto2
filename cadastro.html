@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de voluntário | Raízes do Bem</title>
+  <meta name="description" content="Cadastre-se como voluntário da Raízes do Bem e escolha o projeto em que quer ajudar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<div class="page">
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html"><img class="brand__mark" src="images/logo.svg" alt="" width="36" height="36">Raízes do Bem</a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menu">
+    <label class="nav-burger" for="nav-toggle"><span></span><span></span><span></span><span class="visually-hidden">Menu</span></label>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Início</a></li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--parent" href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="projetos.html#meio-ambiente">Meio ambiente</a></li>
+            <li><a href="projetos.html#educacao">Educação</a></li>
+            <li><a href="projetos.html#saude">Saúde</a></li>
+            <li><a href="projetos.html#como-doar">Como doar</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="index.html#contato">Contato</a></li>
+        <li class="nav__item nav__cta"><a class="btn btn--secondary btn--sm" href="cadastro.html" aria-current="page">Seja voluntário</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+<section class="section">
+  <div class="container layout-form">
+    <div class="panel">
+      <h1 style="font-size:var(--text-3xl)">Cadastro de voluntário</h1>
+      <p class="lead" style="margin-block:var(--space-1) var(--space-3)">Leva cerca de dois minutos. Campos com <span class="field__req">*</span> são obrigatórios.</p>
+      <form class="form">
+        <noscript><p>Ative o JavaScript para testar o cadastro.</p></noscript>
+        <fieldset class="fieldset"><legend>Seus dados</legend>
+          <div class="field"><label for="nome">Nome completo <span class="field__req">*</span></label>
+            <input class="input" id="nome" name="nome" type="text" autocomplete="name" required minlength="5" placeholder="Maria da Silva">
+            <span class="field__hint">Como aparece no seu documento.</span><span class="field__error">Informe nome e sobrenome (mínimo 5 letras).</span><span class="field__ok">Tudo certo.</span></div>
+          <div class="field"><label for="email">E-mail <span class="field__req">*</span></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com">
+            <span class="field__hint">Usamos para confirmar sua inscrição.</span><span class="field__error">Digite um e-mail válido, como voce@email.com.</span><span class="field__ok">E-mail válido.</span></div>
+          <div class="field"><label for="tel">Telefone</label>
+            <input class="input" id="tel" name="tel" type="tel" autocomplete="tel" pattern="(?:\([0-9]{2}\)|[0-9]{2})\s?[0-9]{4,5}\-?[0-9]{4}" placeholder="(11) 90000-0000">
+            <span class="field__hint">Opcional. Com DDD.</span><span class="field__error">Use o formato (11) 90000-0000.</span><span class="field__ok">Telefone válido.</span></div>
+        </fieldset>
+        <fieldset class="fieldset"><legend>Onde você quer ajudar</legend>
+          <div class="field"><label for="projeto">Projeto <span class="field__req">*</span></label>
+            <select class="select" id="projeto" name="projeto" required><option value="">Selecione</option><option>Mata Viva</option><option>Lição de Casa</option><option>Bairro Saudável</option></select>
+            <span class="field__error">Escolha um projeto.</span></div>
+          <div class="field"><span class="field__label">Disponibilidade</span>
+            <div class="choice-group"><label class="choice"><input type="checkbox" name="disp" value="semana"> Dias de semana</label><label class="choice"><input type="checkbox" name="disp" value="sabado"> Sábados</label><label class="choice"><input type="checkbox" name="disp" value="noite"> Noites</label></div></div>
+          <div class="field"><label for="msg">Por que quer participar?</label>
+            <textarea class="textarea" id="msg" name="msg" maxlength="500" placeholder="Conte um pouco sobre você"></textarea><span class="field__hint">Até 500 caracteres.</span></div>
+        </fieldset>
+        <label class="choice"><input type="checkbox" name="lgpd" required> <span>Concordo com o uso dos meus dados para contato sobre o voluntariado. <span class="field__req">*</span></span></label>
+        <div class="form__actions"><button class="btn btn--primary btn--lg" type="submit" disabled data-submit>Enviar cadastro</button><button class="btn btn--outline btn--lg" type="reset">Limpar</button><button class="btn btn--primary btn--lg" type="button" disabled>Aguardando dados</button></div>
+      </form>
+    </div>
+
+    <aside class="stack" aria-label="Informações">
+      <div class="alert alert--info"><div><p class="alert__title">Antes de começar</p><p>Voluntários menores de 18 anos precisam de autorização de um responsável.</p></div></div>
+      <div class="alert alert--success"><div><p class="alert__title">Resposta rápida</p><p>Entramos em contato em até 3 dias úteis.</p></div></div>
+      <div class="alert alert--warning"><div><p class="alert__title">Vagas limitadas</p><p>Lição de Casa tem poucas vagas à noite.</p></div></div>
+      <div class="alert alert--danger"><div><p class="alert__title">Erro de exemplo</p><p>Mensagem de erro com cor, ícone de borda e texto explicando o que fazer.</p></div></div>
+      <div class="panel"><h2 style="font-size:var(--text-lg)">Categorias</h2><ul class="tag-list" style="margin-top:var(--space-1)"><li><span class="badge badge--primary badge--plain">Meio ambiente</span></li><li><span class="badge badge--secondary badge--plain">Educação</span></li><li><span class="badge badge--accent badge--plain">Saúde</span></li></ul></div>
+    </aside>
+  </div>
+</section>
+<div class="toast toast--success" id="toast-cadastro" role="status"><div><p class="alert__title">Cadastro enviado</p><p class="text-sm">Recebemos seus dados. Fique de olho no e-mail.</p></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid stack">
+      <div><h2>Raízes do Bem</h2><p>ONG que conecta pessoas, projetos e recursos para cuidar do território onde vivemos.</p></div>
+      <nav aria-label="Rodapé"><h2>Navegação</h2><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="cadastro.html">Cadastro</a></li></ul></nav>
+      <div><h2>Contato</h2><p>contato@raizesdobem.org<br>(11) 4000-0000</p></div>
+    </div>
+    <p class="site-footer__bottom">© 2026 Raízes do Bem. Projeto acadêmico – Entrega II (CSS3).</p>
+  </div>
+</footer>
+</div>
+<script src="js/main.js" defer></script>
+</body>
+</html>

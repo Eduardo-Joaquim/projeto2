@@ -1,0 +1,68 @@
+/* ==========================================================
+   Layout principal: CSS Grid na estrutura da página
+   (header / main / footer) + layouts por tipo de conteúdo
+   ========================================================== */
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+}
+.page > header { grid-area: header; }
+.page > main   { grid-area: main; }
+.page > footer { grid-area: footer; }
+
+.section { padding-block: var(--space-6); }
+.section--tint { background: var(--color-primary-100); }
+.section--dark { background: var(--color-primary-900); color: var(--color-neutral-0); }
+.section--dark h2, .section--dark h3 { color: var(--color-neutral-0); }
+.section--dark .lead { color: var(--color-primary-100); }
+.section__head { margin-bottom: var(--space-4); display: grid; gap: var(--space-1); }
+
+/* ---- Tipo 1: Hero (conteúdo + ilustração) ---- */
+.hero { padding-block: var(--space-6) var(--space-8); background: var(--color-surface); border-bottom: var(--border); }
+.hero__inner { display: grid; gap: var(--space-4); align-items: center; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-3); }
+.hero h1 { margin-bottom: var(--space-2); }
+.hero__media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+
+/* ---- Tipo 2: Sidebar + conteúdo (listagem de projetos) ---- */
+.layout-sidebar { display: grid; gap: var(--space-4); grid-template-columns: minmax(0, 1fr); }
+.sidebar { background: var(--color-surface); border: var(--border); border-radius: var(--radius-md); padding: var(--space-3); align-self: start; }
+.sidebar h2 { font-size: var(--text-lg); margin-bottom: var(--space-2); }
+
+/* ---- Tipo 3: Formulário em duas colunas (formulário + painel lateral) ---- */
+.layout-form { display: grid; gap: var(--space-4); grid-template-columns: minmax(0, 1fr); }
+.panel { background: var(--color-surface); border: var(--border); border-radius: var(--radius-md); padding: var(--space-4); box-shadow: var(--shadow-sm); }
+
+/* ---- Tipo 4: Estatísticas ---- */
+.stats { display: grid; gap: var(--space-3); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stats > div { display: grid; gap: var(--space-1); }
+
+/* ---- Tipo 5: Passos (como doar) ---- */
+.steps { display: grid; gap: var(--space-3); counter-reset: passo; padding: 0; list-style: none; }
+.steps li { counter-increment: passo; display: flex; gap: var(--space-2); align-items: flex-start; }
+.steps li::before {
+  content: counter(passo); flex: none; display: grid; place-items: center;
+  width: 2.5rem; height: 2.5rem; border-radius: 50%;
+  background: var(--color-secondary-500); color: var(--color-neutral-900);
+  font-family: var(--font-display); font-weight: var(--weight-bold);
+}
+
+/* ---- Rodapé ---- */
+.site-footer { background: var(--color-primary-900); color: var(--color-primary-100); padding-block: var(--space-6) var(--space-4); }
+.site-footer h2 { font-size: var(--text-lg); color: var(--color-neutral-0); margin-bottom: var(--space-1); }
+.site-footer a { color: var(--color-secondary-500); }
+.site-footer ul { list-style: none; padding: 0; display: grid; gap: var(--space-1); }
+.site-footer__bottom { margin-top: var(--space-4); padding-top: var(--space-2); border-top: 1px solid rgb(255 255 255 / 20%); font-size: var(--text-sm); }
+
+/* ---- Utilitários de flexbox ---- */
+.flex { display: flex; }
+.flex--wrap { flex-wrap: wrap; }
+.flex--between { justify-content: space-between; }
+.flex--center { align-items: center; }
+.flex--gap-1 { gap: var(--space-1); }
+.flex--gap-2 { gap: var(--space-2); }
+.stack > * + * { margin-top: var(--space-2); }
+.stack--lg > * + * { margin-top: var(--space-4); }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Raízes do Bem</title>
+  <meta name="description" content="Conheça os projetos da Raízes do Bem, veja como doar e como ser voluntário.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<div class="page">
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html"><img class="brand__mark" src="images/logo.svg" alt="" width="36" height="36">Raízes do Bem</a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menu">
+    <label class="nav-burger" for="nav-toggle"><span></span><span></span><span></span><span class="visually-hidden">Menu</span></label>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Início</a></li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--parent" href="projetos.html" aria-current="page">Projetos</a>
+          <ul class="submenu">
+            <li><a href="projetos.html#meio-ambiente">Meio ambiente</a></li>
+            <li><a href="projetos.html#educacao">Educação</a></li>
+            <li><a href="projetos.html#saude">Saúde</a></li>
+            <li><a href="projetos.html#como-doar">Como doar</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="index.html#contato">Contato</a></li>
+        <li class="nav__item nav__cta"><a class="btn btn--secondary btn--sm" href="cadastro.html">Seja voluntário</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+<section class="hero" aria-labelledby="titulo-projetos">
+  <div class="container"><h1 id="titulo-projetos">Projetos e voluntariado</h1><p class="lead">Escolha uma causa, veja quanto já foi arrecadado e apoie com tempo ou com doação.</p></div>
+</section>
+
+<section class="section">
+  <div class="container layout-sidebar">
+    <aside class="sidebar" aria-label="Filtros">
+      <h2>Filtrar por causa</h2>
+      <ul class="tag-list"><li><a class="tag" href="#meio-ambiente">Meio ambiente</a></li><li><a class="tag" href="#educacao">Educação</a></li><li><a class="tag" href="#saude">Saúde</a></li></ul>
+      <h2 style="margin-top:var(--space-3)">Legenda</h2>
+      <ul class="stack" role="list"><li><span class="badge badge--primary">Em andamento</span></li><li><span class="badge badge--secondary">Vagas abertas</span></li><li><span class="badge badge--accent">Campanha</span></li><li><span class="badge badge--danger">Encerrado</span></li></ul>
+    </aside>
+
+    <div class="stack--lg stack">
+      <article class="card card--horizontal" id="meio-ambiente">
+        <img class="card__media" src="images/projeto-mata.svg" alt="Ilustração de mudas de árvores" width="800" height="500" loading="lazy">
+        <div class="card__body">
+          <div class="card__meta"><span class="badge badge--primary">Em andamento</span><span class="tag">Meio ambiente</span><span class="tag">Aos sábados</span></div>
+          <h2 class="card__title">Mata Viva</h2>
+          <p>Plantio de mudas nativas e monitoramento do crescimento. Não precisa de experiência.</p>
+          <div><p class="text-sm text-muted">R$ 18.400 de R$ 30.000</p><div class="progress" role="progressbar" aria-label="Meta arrecadada" aria-valuemin="0" aria-valuemax="100" aria-valuenow="61"><span style="width:61%"></span></div></div>
+        </div>
+        <div class="card__footer"><a class="btn btn--primary btn--sm" href="cadastro.html">Quero participar</a></div>
+      </article>
+      <article class="card card--horizontal" id="educacao">
+        <img class="card__media" src="images/projeto-educacao.svg" alt="Ilustração de reforço escolar" width="800" height="500" loading="lazy">
+        <div class="card__body">
+          <div class="card__meta"><span class="badge badge--secondary">Vagas abertas</span><span class="tag">Educação</span><span class="tag">Noite</span></div>
+          <h2 class="card__title">Lição de Casa</h2>
+          <p>Voluntários acompanham crianças em matemática e leitura, duas vezes por semana.</p>
+          <div><p class="text-sm text-muted">R$ 9.100 de R$ 20.000</p><div class="progress" role="progressbar" aria-label="Meta arrecadada" aria-valuemin="0" aria-valuemax="100" aria-valuenow="46"><span style="width:46%"></span></div></div>
+        </div>
+        <div class="card__footer"><a class="btn btn--primary btn--sm" href="cadastro.html">Quero participar</a></div>
+      </article>
+      <article class="card card--horizontal card--highlight" id="saude">
+        <img class="card__media" src="images/projeto-saude.svg" alt="Ilustração de campanha de saúde" width="800" height="500" loading="lazy">
+        <div class="card__body">
+          <div class="card__meta"><span class="badge badge--accent">Campanha</span><span class="tag">Saúde</span><span class="tag">Presencial</span></div>
+          <h2 class="card__title">Bairro Saudável</h2>
+          <p>Mutirão de exames de rotina e orientação com profissionais de saúde voluntários.</p>
+          <div><p class="text-sm text-muted">R$ 27.600 de R$ 30.000</p><div class="progress" role="progressbar" aria-label="Meta arrecadada" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92"><span style="width:92%"></span></div></div>
+        </div>
+        <div class="card__footer"><a class="btn btn--primary btn--sm" href="cadastro.html">Quero participar</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="como-doar" aria-labelledby="titulo-doar">
+  <div class="container grid grid--gap-lg">
+    <div class="col-12 col-lg-6">
+      <h2 id="titulo-doar">Como doar</h2>
+      <ol class="steps stack">
+        <li><div><h3 class="text-lg">Escolha o projeto</h3><p>Defina para qual causa vai a sua doação.</p></div></li>
+        <li><div><h3 class="text-lg">Faça o Pix ou transferência</h3><p>Chave Pix: <strong>doe@raizesdobem.org</strong></p></div></li>
+        <li><div><h3 class="text-lg">Receba o comprovante</h3><p>Enviamos o recibo por e-mail em até 48 horas.</p></div></li>
+      </ol>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="panel stack">
+        <h3>Doação em um clique</h3>
+        <p>Veja a confirmação antes de seguir para o pagamento.</p>
+        <div class="flex flex--wrap flex--gap-2"><a class="btn btn--primary" href="#modal-doacao">Doar agora</a><a class="btn btn--outline" href="#toast-lembrete">Lembrar depois</a><button class="btn btn--primary" type="button" disabled>Indisponível</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="modal-doacao" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <a class="modal__backdrop" href="#como-doar" aria-label="Fechar"></a>
+  <div class="modal__dialog">
+    <h2 id="modal-titulo" class="text-lg" style="font-size:var(--text-2xl)">Confirmar doação</h2>
+    <p>Você será direcionado ao pagamento seguro. Toda doação recebe recibo por e-mail.</p>
+    <div class="alert alert--warning"><p>Doações não são reembolsáveis após o envio do comprovante.</p></div>
+    <div class="modal__actions"><a class="btn btn--outline" href="#como-doar">Cancelar</a><a class="btn btn--primary" href="#toast-doacao">Confirmar</a></div>
+  </div>
+</div>
+<div class="toast toast--success" id="toast-doacao" role="status"><div><p class="alert__title">Doação registrada</p><p class="text-sm">Obrigado! Enviamos o recibo para o seu e-mail.</p></div></div>
+<div class="toast" id="toast-lembrete" role="status"><div><p class="alert__title">Lembrete criado</p><p class="text-sm">Avisaremos você em 7 dias.</p></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid stack">
+      <div><h2>Raízes do Bem</h2><p>ONG que conecta pessoas, projetos e recursos para cuidar do território onde vivemos.</p></div>
+      <nav aria-label="Rodapé"><h2>Navegação</h2><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="cadastro.html">Cadastro</a></li></ul></nav>
+      <div><h2>Contato</h2><p>contato@raizesdobem.org<br>(11) 4000-0000</p></div>
+    </div>
+    <p class="site-footer__bottom">© 2026 Raízes do Bem. Projeto acadêmico – Entrega II (CSS3).</p>
+  </div>
+</footer>
+</div>
+<script src="js/main.js" defer></script>
+</body>
+</html>

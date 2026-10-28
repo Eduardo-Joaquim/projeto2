@@ -1,0 +1,96 @@
+/* ==========================================================
+   DESIGN SYSTEM – tokens (variáveis CSS customizadas)
+   Breakpoints (mobile-first, min-width):
+   sm 480px | md 768px | lg 1024px | xl 1280px | xxl 1536px
+   ========================================================== */
+:root {
+  /* ---------- Cores primárias (verde-água "mata") ---------- */
+  --color-primary-900: #083b38;
+  --color-primary-700: #0b5a54;
+  --color-primary-500: #12857a;
+  --color-primary-100: #dcf1ee;
+
+  /* ---------- Cores secundárias (amarelo "ipê") ---------- */
+  --color-secondary-700: #8a5a00;
+  --color-secondary-500: #f2b134;
+  --color-secondary-100: #fdf0d0;
+
+  /* ---------- Cor de destaque (roxo "jabuticaba") ---------- */
+  --color-accent-700: #5b2a5e;
+  --color-accent-100: #f0e3f1;
+
+  /* ---------- Neutras ---------- */
+  --color-neutral-900: #16201f;
+  --color-neutral-700: #3c4a48;
+  --color-neutral-500: #5a6866;
+  --color-neutral-300: #c9d3d1;
+  --color-neutral-100: #eef3f2;
+  --color-neutral-0:   #ffffff;
+
+  /* ---------- Feedback ---------- */
+  --color-success: #1e7a46;
+  --color-success-bg: #e3f4ea;
+  --color-warning: #8a5a00;
+  --color-warning-bg: #fdf0d0;
+  --color-danger: #b3261e;
+  --color-danger-bg: #fbe7e5;
+  --color-info: #1b5e9b;
+  --color-info-bg: #e2eefa;
+
+  /* ---------- Papéis semânticos ---------- */
+  --color-bg: var(--color-neutral-100);
+  --color-surface: var(--color-neutral-0);
+  --color-text: var(--color-neutral-900);
+  --color-text-muted: var(--color-neutral-500);
+  --color-border: var(--color-neutral-300);
+  --color-link: var(--color-primary-700);
+  --color-focus: var(--color-accent-700);
+
+  /* ---------- Tipografia ---------- */
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --text-xs:  0.8125rem;                        /* 13px */
+  --text-sm:  0.9375rem;                        /* 15px */
+  --text-base: 1.0625rem;                       /* 17px */
+  --text-lg:  1.25rem;                          /* 20px */
+  --text-xl:  clamp(1.375rem, 1.2rem + 0.8vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+  --text-3xl: clamp(2.25rem, 1.6rem + 2.8vw, 3.5rem);
+  --text-4xl: clamp(2.75rem, 1.8rem + 4.2vw, 4.75rem);
+
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 800;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+
+  /* ---------- Espaçamento modular ---------- */
+  --space-1: 0.5rem;   /*  8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+
+  /* ---------- Bordas, sombras, camadas ---------- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --border: 1px solid var(--color-border);
+  --shadow-sm: 0 1px 2px rgb(8 59 56 / 12%);
+  --shadow-md: 0 8px 24px rgb(8 59 56 / 14%);
+  --shadow-lg: 0 20px 48px rgb(8 59 56 / 22%);
+
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-modal: 500;
+  --z-toast: 600;
+
+  --container-max: 1200px;
+  --gutter: var(--space-3);
+  --transition: 180ms ease;
+}
